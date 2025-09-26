@@ -7,7 +7,7 @@ import model.constants.Colour;
 import model.service.ShoppingCart;
 
 public class Main {
-    public static  void main(String[] args) {
+    public static void main(String[] args) {
 
         Food meat = new Meat(5, 100);
 
@@ -16,12 +16,12 @@ public class Main {
 
         Food[] products = {meat, redApples, greenApples};
 
-            ShoppingCart shoppingcart = new ShoppingCart(products);
+        ShoppingCart shoppingcart = new ShoppingCart(products);
 
-            System.out.println("Общая сумма товаров без скидки:" + shoppingcart.sharedShoppingCard() + "рублей");
-            System.out.println("Общая сумма товаров со скидкой:" + shoppingcart.amountDiscountedItems() + "рублей");
-            System.out.println("Сумма вегетарианских продуктов без скидки:" + shoppingcart.sumVeganproducts() + "рублей");
-        }
+        System.out.println("Общая сумма товаров без скидки:" + shoppingcart.sharedShoppingCard() + "рублей");
+        System.out.println("Общая сумма товаров со скидкой:" + shoppingcart.amountDiscountedItems() + "рублей");
+        System.out.println("Сумма вегетарианских продуктов без скидки:" + shoppingcart.sumVeganproducts() + "рублей");
     }
+}
 
 

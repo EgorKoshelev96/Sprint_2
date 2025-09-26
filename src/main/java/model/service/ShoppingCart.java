@@ -38,6 +38,7 @@ public class ShoppingCart {
         }
         return total;
     }
+
     public double amountDiscountedItems() {
         double total = 0;
         for (int i = 0; i < element.length; i++) {
