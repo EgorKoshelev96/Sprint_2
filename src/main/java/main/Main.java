@@ -22,6 +22,7 @@ public class Main {
             System.out.println("Общая сумма товаров со скидкой:" + shoppingcart.amountDiscountedItems() + "рублей");
             System.out.println("Сумма вегетарианских продуктов без скидки:" + shoppingcart.sumVeganproducts() + "рублей");
         }
-    }
+
+}
 
 
