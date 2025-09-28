@@ -7,14 +7,14 @@ public class Apple extends Food implements Discountable {
     private String colour;
 
     public Apple(int amount, double price, String colour) {
-        super(amount, price,true);
+        super(amount, price, true);
         this.colour = colour;
     }
 
     @Override
     public double getDiscount() {
-        if (colour == "red"){
-            return Discount.redDiscount;
+        if (colour.equals("red") ) {
+            return Discount.RED_DISCOUNT;
         }
         return 0;
     }
