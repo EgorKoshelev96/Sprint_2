@@ -13,8 +13,8 @@ public class Apple extends Food implements Discountable {
 
     @Override
     public double getDiscount() {
-        if (colour == "red") {
-            return Discount.redDiscount;
+        if (colour.equals("red") ) {
+            return Discount.RED_DISCOUNT;
         }
         return 0;
     }

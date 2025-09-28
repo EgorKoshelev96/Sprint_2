@@ -11,16 +11,16 @@ public class Main {
 
         Food meat = new Meat(5, 100);
 
-        Food redApples = new Apple(10, 50, Colour.red);
-        Food greenApples = new Apple(8, 60, Colour.green);
+        Food redApples = new Apple(10, 50, Colour.RED);
+        Food greenApples = new Apple(8, 60, Colour.GREEN);
 
         Food[] products = {meat, redApples, greenApples};
 
         ShoppingCart shoppingcart = new ShoppingCart(products);
 
-        System.out.println("Общая сумма товаров без скидки:" + shoppingcart.sharedShoppingCard() + "рублей");
-        System.out.println("Общая сумма товаров со скидкой:" + shoppingcart.amountDiscountedItems() + "рублей");
-        System.out.println("Сумма вегетарианских продуктов без скидки:" + shoppingcart.sumVeganproducts() + "рублей");
+        System.out.printf("Общая сумма товаров без скидки: %.2f рублей %n",shoppingcart.sharedShoppingCard());
+        System.out.printf("Общая сумма товаров со скидкой: %.2f рублей %n",shoppingcart.amountDiscountedItems());
+        System.out.printf("Сумма вегетарианских продуктов без скидки: %.2f рублей %n",shoppingcart.sumVeganproducts());
     }
 }
 

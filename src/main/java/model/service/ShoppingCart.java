@@ -19,8 +19,7 @@ public class ShoppingCart {
 
     public double sharedShoppingCard() {
         double total = 0;
-        for (int i = 0; i < element.length; i++) {
-            Food currentElement = element[i];
+        for (Food currentElement : element) {
             total += currentElement.getPrice() * currentElement.getAmount();
         }
         return total;
@@ -30,8 +29,7 @@ public class ShoppingCart {
     public double sumVeganproducts() {
         double total = 0;
 
-        for (int i = 0; i < element.length; i++) {
-            Food currentElement = element[i];
+        for (Food currentElement : element) {
             if (currentElement.getIsVegetarian()) {
                 total += currentElement.getPrice() * currentElement.getAmount();
             }
@@ -41,8 +39,7 @@ public class ShoppingCart {
 
     public double amountDiscountedItems() {
         double total = 0;
-        for (int i = 0; i < element.length; i++) {
-            Food currentElement = element[i];
+        for (Food currentElement : element) {
             if (true) {
                 Discountable discountableElement = (Discountable) currentElement;
                 double discount = discountableElement.getDiscount();
